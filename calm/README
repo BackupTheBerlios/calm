@@ -1,0 +1,44 @@
+README for CALM
+================
+
+CALM
+
+Companywide
+ Aggregated
+  License
+   Management
+
+
+(c) Konrad Rosenbaum, Mark H. Schmidt, 2002
+all rights reserved
+
+
+An indefinite, royalty free license to use this software is granted to
+TRW Inc. and its subdivisions.
+
+This software is provided AS IS. The authors grant ABSOLUTELY NO
+WARRENTY whatsoever.
+
+
+
+Installation
+==============
+
+You need:
+
+Apache 1.2 or newer
+PHP 4.1 or newer
+Postgres 7.x or newer
+
+
+1. configure Apache to accept PHP
+2. configure PHP to be able to connect to Postgres
+3. copy CALMs www directory to (a subdirectory of) your Documentroot
+   Note: it does not work in a user directory.
+4. set "AllowOverride All" for this directory
+5. edit config.inc in the CALM-www-directory
+6. edit Makefile accordingly
+7. call "make dbinit" (you have to call that as a DB-Admin)
+8. Log in to CALM as user "hello", password "wall"
+9. create new users
+10. delete the user "hello"

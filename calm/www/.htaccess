@@ -1,0 +1,7 @@
+<Files *.inc>
+	Order Deny,Allow
+	Deny from all
+</Files>
+
+php_flag magic_quotes_gpc off
+php_flag magic_quotes_runtime off

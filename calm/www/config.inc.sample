@@ -1,0 +1,31 @@
+<?
+
+        ///////////////////////////////
+        //CALM CONFIGURATION
+
+        //this is PHP source, please make sure that no spaces
+        //are added before <? and after ? >
+
+
+        ///////////////////////
+        //Who administrates this DB?
+        //multiple admins are allowed, but only one (primary) adminemail
+        $CONFIG["admin"][]      = "konrad";
+        $CONFIG["admin"][]      = "mark";
+        //delete this line after creating users:
+        $CONFIG["admin"][]      = "hello";
+
+        //primary/server admins email:
+        $CONFIG["adminemail"]   = "konrad.rosenbaum@trw.com";
+
+
+
+        /////////////////////////
+        //Database connection:
+        $CONFIG["pgsql"]        = "dbname=calmdb user=calm";
+        //$CONFIG["pgsql"]        = "dbname=calmdb user=calm password=secret";
+        //$CONFIG["pgsql"]        = "host=shire port=5432 dbname=calmdb user=calm";
+
+        ////////////////////////
+        //....
+?>
